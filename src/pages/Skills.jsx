@@ -38,8 +38,10 @@ const Skills = () => {
       <div>
         <Swiper
           modules={[Autoplay, Pagination]}
-          slidesPerView={3}
           loop={false}
+          centeredSlides={true}
+          grabCursor={true}
+          slidesPerView={3}
           pagination={{
             clickable: true,
             el: ".custom-pagination",
@@ -47,19 +49,19 @@ const Skills = () => {
               `<span class="${className} inline-block w-3 h-3 mx-1 rounded-full bg-white/60 transition-all duration-300"></span>`,
           }}
           autoplay={{
-            delay: 4000, // 4 seconds between slides
+            delay: 4000,
             disableOnInteraction: true,
             pauseOnMouseEnter: true,
           }}
-          speed={1000} //
+          speed={1000}
           breakpoints={{
-            0: { slidesPerView: 1, spaceBetween: 24, centeredSlides: true },
-            480: { slidesPerView: 2, spaceBetween: 20 },
+            0: { slidesPerView: 2, spaceBetween: 20 },
+            480: { slidesPerView: 2, spaceBetween: 24 },
             640: { slidesPerView: 3, spaceBetween: 24 },
             768: { slidesPerView: 4, spaceBetween: 28 },
             1024: { slidesPerView: 5, spaceBetween: 40 },
           }}
-          className="w-full max-w-6xl"
+          className="w-full max-w-6xl swiper-smooth"
         >
           {skills.map((s, id) => (
             <SwiperSlide key={id} className="flex justify-center">

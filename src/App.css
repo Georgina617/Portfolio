@@ -1,0 +1,9 @@
+.swiper-smooth {
+  transition-timing-function: ease-in-out !important;
+  will-change: transform;
+}
+
+.swiper-slide {
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+}

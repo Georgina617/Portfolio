@@ -50,13 +50,15 @@ const Skills = () => {
             slidesPerView={3}
             pagination={{
               clickable: true,
-              el: ".custom-pagination", // 👈 we define our own pagination container outside
+              el: ".custom-pagination",
+              renderBullet: (index, className) =>
+                `<span class="${className} inline-block w-4 h-4 mx-1 rounded-full bg-white/70 opacity-70 transition-all duration-300"></span>`,
             }}
             autoplay={{
-              delay: 3000, // continuous flow
+              delay: 3000, // slightly faster on mobile
               disableOnInteraction: false,
             }}
-            speed={2000}
+            speed={2000} // smoother but a bit faster
             breakpoints={{
               0: {
                 slidesPerView: 2,

@@ -35,33 +35,51 @@ const Skills = () => {
         and scalable web experiences.
       </p>
       {/* swiper carousel */}
-      <div>
+      <div className="w-full flex flex-col items-center">
         <Swiper
           modules={[Autoplay, Pagination]}
-          loop={false}
+          loop={true}
           centeredSlides={true}
           grabCursor={true}
           slidesPerView={3}
           pagination={{
             clickable: true,
-            el: ".custom-pagination",
-            renderBullet: (index, className) =>
-              `<span class="${className} inline-block w-3 h-3 mx-1 rounded-full bg-white/60 transition-all duration-300"></span>`,
+            el: ".custom-pagination", // 👈 we define our own pagination container outside
           }}
           autoplay={{
-            delay: 4000,
-            disableOnInteraction: true,
-            pauseOnMouseEnter: true,
+            delay: 3000, // continuous flow
+            disableOnInteraction: false,
           }}
-          speed={1000}
+          speed={2000}
           breakpoints={{
-            0: { slidesPerView: 3, spaceBetween: 12, centeredSlides: true },
-            480: { slidesPerView: 3, spaceBetween: 16 },
-            640: { slidesPerView: 3, spaceBetween: 20 },
-            768: { slidesPerView: 4, spaceBetween: 24 },
-            1024: { slidesPerView: 5, spaceBetween: 40 },
+            0: {
+              slidesPerView: 2,
+              spaceBetween: 16,
+              loop: true,
+              autoplay: {
+                delay: 2500, // faster slide switch for mobile
+                disableOnInteraction: false,
+              },
+            },
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+              autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+              },
+            },
+            1024: {
+              slidesPerView: 5,
+              spaceBetween: 40,
+              autoplay: {
+                delay: 0,
+                disableOnInteraction: false,
+              },
+              speed: 4000,
+            },
           }}
-          className="w-full max-w-6xl swiper-smooth"
+          className="w-full max-w-6xl"
         >
           {skills.map((s, id) => (
             <SwiperSlide key={id} className="flex justify-center">
@@ -72,6 +90,8 @@ const Skills = () => {
             </SwiperSlide>
           ))}
         </Swiper>
+
+        {/* 👇 Pagination placed outside and centered */}
         <div className="custom-pagination flex justify-center mt-6"></div>
       </div>
     </section>

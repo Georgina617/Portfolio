@@ -1,6 +1,8 @@
 import { Code, Palette, Settings, Smartphone, Zap } from "lucide-react";
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-scroll";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const services = [
   {
     title: "Web Development",
@@ -79,13 +81,26 @@ const services = [
   },
 ];
 const Services = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <section
       id="services"
       className="min-h-screen bg-gray-900 text-white py-10 px-6"
     >
-      <h2 className="text-3xl font-bold text-center mb-6">My Services</h2>
-      <p className="text-center text-gray-400 mb-12 max-w-2xl mx-auto">
+      <h2
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        className="text-3xl font-bold text-center mb-6"
+      >
+        My Services
+      </h2>
+      <p
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        className="text-center text-gray-400 mb-12 max-w-2xl mx-auto"
+      >
         Tailored frontend development that combines innovation, performance, and
         design to help your brand stand out.
       </p>

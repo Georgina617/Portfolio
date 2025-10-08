@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import voyagerImg from "../assets/voyager.png";
 import ecommerceImg from "../assets/Ecommerce.png";
 import weatherImg from "../assets/weather App.png";
 import { ExternalLink } from "lucide-react";
 import { FiGithub } from "react-icons/fi";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const projects = [
   {
@@ -36,20 +38,35 @@ const projects = [
 ];
 
 const Projects = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <section
       id="projects"
       className="relative min-h-screen py-16 px-6 bg-gray-900 text-white"
     >
-      <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">
+      <h2
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        className="text-3xl md:text-4xl font-bold mb-6 text-center"
+      >
         My Projects
       </h2>
-      <p className="text-gray-400 text-md text-center mb-10 max-w-2xl mx-auto">
+      <p
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        className="text-gray-400 text-md text-center mb-10 max-w-2xl mx-auto"
+      >
         A showcase of modern solutions and thoughtful designs that reflect my
         dedication to innovation, technology, and seamless user experiences.
       </p>
       {/* Project Cards */}
-      <div className="grid md:grid-cols-3 gap-10">
+      <div
+        data-aos="zoom-in"
+        data-aos-duration="1000"
+        className="grid md:grid-cols-3 gap-10"
+      >
         {projects.map((p, idx) => (
           <div
             key={idx}

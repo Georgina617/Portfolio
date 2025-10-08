@@ -1,14 +1,23 @@
 import { Mail, Phone, Sparkles } from "lucide-react";
-import React from "react";
+import React, { useEffect } from "react";
 import { IoLogoLinkedin } from "react-icons/io";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Contact = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <section
       id="contact"
       className="min-h-screen bg-gray-900 text-white flex flex-col items-center px-6"
     >
-      <div className="py-16 text-center flex flex-col items-center">
+      <div
+        data-aos="zoom-in-up"
+        data-aos-duration="1000"
+        className="py-16 text-center flex flex-col items-center"
+      >
         <div className="flex items-center gap-3">
           <Sparkles className="w-6 h-6 text-white animate-spin" />
           <h1 className="text-3xl sm:text-4xl font-bold ">Contact me</h1>

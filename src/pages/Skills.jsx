@@ -39,6 +39,7 @@ const Skills = () => {
         <Swiper
           modules={[Autoplay, Pagination]}
           slidesPerView={3}
+          loop={false}
           pagination={{
             clickable: true,
             el: ".custom-pagination",
@@ -46,10 +47,11 @@ const Skills = () => {
               `<span class="${className} inline-block w-3 h-3 mx-1 rounded-full bg-white/60 transition-all duration-300"></span>`,
           }}
           autoplay={{
-            delay: 4000, // 4 seconds before each slide change
-            disableOnInteraction: false, // keep autoplay active after swiping
+            delay: 4000, // 4 seconds between slides
+            disableOnInteraction: true,
+            pauseOnMouseEnter: true,
           }}
-          speed={1200} // smooth transition animation
+          speed={1000} //
           breakpoints={{
             0: { slidesPerView: 1, spaceBetween: 24, centeredSlides: true },
             480: { slidesPerView: 2, spaceBetween: 20 },

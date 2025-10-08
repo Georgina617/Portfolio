@@ -45,34 +45,17 @@ const Skills = () => {
             renderBullet: (index, className) =>
               `<span class="${className} inline-block w-3 h-3 mx-1 rounded-full bg-white/60 transition-all duration-300"></span>`,
           }}
-          autoplay={{ delay: 4000, disableOnInteraction: false }}
+          autoplay={{
+            delay: 4000, // 4 seconds before each slide change
+            disableOnInteraction: false, // keep autoplay active after swiping
+          }}
+          speed={1200} // smooth transition animation
           breakpoints={{
-            0: {
-              slidesPerView: 1,
-              spaceBetween: 24,
-              centeredSlides: true,
-              autoplay: { delay: 5000 }, // slower on mobile
-            },
-            480: {
-              slidesPerView: 2,
-              spaceBetween: 20,
-              autoplay: { delay: 4000 },
-            },
-            640: {
-              slidesPerView: 3,
-              spaceBetween: 24,
-              autoplay: { delay: 3500 },
-            },
-            768: {
-              slidesPerView: 4,
-              spaceBetween: 28,
-              autoplay: { delay: 3000 },
-            },
-            1024: {
-              slidesPerView: 5,
-              spaceBetween: 40,
-              autoplay: { delay: 2500 },
-            },
+            0: { slidesPerView: 1, spaceBetween: 24, centeredSlides: true },
+            480: { slidesPerView: 2, spaceBetween: 20 },
+            640: { slidesPerView: 3, spaceBetween: 24 },
+            768: { slidesPerView: 4, spaceBetween: 28 },
+            1024: { slidesPerView: 5, spaceBetween: 40 },
           }}
           className="w-full max-w-6xl"
         >

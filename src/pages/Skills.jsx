@@ -55,10 +55,10 @@ const Skills = () => {
           }}
           speed={1000}
           breakpoints={{
-            0: { slidesPerView: 2, spaceBetween: 20 },
-            480: { slidesPerView: 2, spaceBetween: 24 },
-            640: { slidesPerView: 3, spaceBetween: 24 },
-            768: { slidesPerView: 4, spaceBetween: 28 },
+            0: { slidesPerView: 3, spaceBetween: 12, centeredSlides: true },
+            480: { slidesPerView: 3, spaceBetween: 16 },
+            640: { slidesPerView: 3, spaceBetween: 20 },
+            768: { slidesPerView: 4, spaceBetween: 24 },
             1024: { slidesPerView: 5, spaceBetween: 40 },
           }}
           className="w-full max-w-6xl swiper-smooth"

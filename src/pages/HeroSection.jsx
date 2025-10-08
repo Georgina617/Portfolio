@@ -1,17 +1,20 @@
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
+import Desktop from "../assets/Desktop.jpg";
 
 const HeroSection = () => {
   return (
     <div
       id="home"
-      className="h-screen w-full bg-fixed bg-center bg-cover text-white relative"
-      style={{
-        backgroundImage: `url('https://michaelking.vercel.app/static/media/nikita-kachanovsky-OVbeSXRk_9E-unsplash.61d62b90696a528ad44a.jpg')`,
-      }}
+      className="relative h-screen w-full text-white flex items-center justify-center overflow-hidden"
     >
-      <div className="absolute inset-0 bg-black/60"></div>
-
+      {/* Background image */}
+      <img
+        src={Desktop}
+        alt="Hero background"
+        className="absolute inset-0 w-full h-full object-cover object-center"
+      />
+      <div className="absolute inset-0 bg-black/30 sm:bg-black/40 md:bg-black/50 lg:bg-black/60"></div>
       {/* Content (centered) */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full px-6 text-center space-y-4">
         <p className="text-lg sm:text-xl md:text-2xl  font-light text-sky-400">

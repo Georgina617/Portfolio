@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import html from "../assets/html.png";
-import css from "../assets/css.jpg";
+import css from "../assets/CSS.jpg";
 import js from "../assets/javascript.png";
 import react from "../assets/react.png";
 import tailwind from "../assets/tailwind.png";

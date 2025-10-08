@@ -35,7 +35,7 @@ const Skills = () => {
         and scalable web experiences.
       </p>
       {/* swiper carousel */}
-      <div>
+      <div className="w-full flex justify-center">
         <Swiper
           modules={[Autoplay, Pagination]}
           loop={false}
@@ -61,7 +61,7 @@ const Skills = () => {
             768: { slidesPerView: 4, spaceBetween: 24 },
             1024: { slidesPerView: 5, spaceBetween: 40 },
           }}
-          className="w-full max-w-6xl swiper-smooth"
+          className="w-[90%] max-w-6xl swiper-smooth"
         >
           {skills.map((s, id) => (
             <SwiperSlide key={id} className="flex justify-center">

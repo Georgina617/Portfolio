@@ -3,6 +3,7 @@ import { Typewriter } from "react-simple-typewriter";
 import Desktop from "../assets/Desktop.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   useEffect(() => {
@@ -40,7 +41,7 @@ const HeroSection = () => {
         </h1>
         <p className="text-base sm:text-lg md:text-2xl font-bold text-white">
           <Typewriter
-            words={["Frontend Developer"]}
+            words={["FullStack Developer"]}
             loop={1}
             typeSpeed={80}
             deleteSpeed={50}
@@ -50,16 +51,18 @@ const HeroSection = () => {
         {/* Buttons */}
 
         <div
-          className="mt-6 flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto"
+          className="mt-6 flex flex-row items-center justify-center gap-4"
           data-aos="zoom-in"
           data-aos-duration="1000"
         >
-          <a
-            href="#"
-            className="px-5 py-2 sm:px-6 sm:py-3 rounded-md border border-sky-400 text-sky-400 hover:bg-sky-400 hover:text-white transition text-center text-sm sm:text-base"
-          >
-            Download CV
-          </a>
+          <Link to="/resume">
+            <a
+              href="#"
+              className="px-5 py-2 sm:px-6 sm:py-3 rounded-md border border-sky-400 text-sky-400 hover:bg-sky-400 hover:text-white transition text-center text-sm sm:text-base"
+            >
+              My Resume
+            </a>
+          </Link>
           <a
             href="#contact"
             className="px-5 py-2 sm:px-6 sm:py-3 rounded-md bg-sky-500 hover:bg-sky-600 transition text-center text-sm sm:text-base"

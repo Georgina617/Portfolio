@@ -10,6 +10,13 @@ import tailwind from "../assets/tailwind.png";
 import sass from "../assets/sass.jpeg";
 import git from "../assets/git.png";
 import ps from "../assets/photoshop.png";
+import ts from "../assets/Typescript.png";
+import Ns from "../assets/Node.png";
+import express from "../assets/Express.png";
+import mongo from "../assets/MongoDB.png";
+import mysql from "../assets/MySQL.png";
+import php from "../assets/PHP.png";
+import jwt from "../assets/JWT.png";
 import { Autoplay, Pagination } from "swiper/modules";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -18,10 +25,17 @@ const skills = [
   { name: "HTML", icon: html },
   { name: "CSS", icon: css },
   { name: "Javascript", icon: js },
+  { name: "Typescript", icon: ts },
   { name: "ReactJS", icon: react },
+  { name: "NodeJS", icon: Ns },
+  { name: "ExpressJS", icon: express },
+  { name: "MongoDB", icon: mongo },
+  { name: "MySQL", icon: mysql },
+  { name: "PHP", icon: php },
   { name: "TailwindCSS", icon: tailwind },
   { name: "SASS", icon: sass },
   { name: "Git", icon: git },
+  { name: "JWT", icon: jwt },
   { name: "Photoshop", icon: ps },
 ];
 

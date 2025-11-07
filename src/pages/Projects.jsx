@@ -14,8 +14,8 @@ const projects = [
       "A modern travel and booking platform with a clean UI for exploring destinations, booking tours, and managing trips seamlessly. Built with React and Tailwind for responsiveness.",
     tags: ["React", "Tailwind CSS", "Javascript"],
     image: voyagerImg,
-    demoLink: "#",
-    githubLink: "https://github.com/Georgina617",
+    demoLink: "https://travelsandtourvoyage.com/",
+    githubLink: "https://github.com/Georgina617/voyager-website.git",
   },
   {
     title: "DNk Ecommerce Website",
@@ -33,7 +33,7 @@ const projects = [
     tags: ["React", "Tailwind CSS", "Javascript"],
     image: weatherImg,
     demoLink: "https://georgina617.github.io/Weather-app/",
-    githubLink: "https://github.com/Georgina617",
+    githubLink: "https://github.com/Georgina617/Weather-app.git",
   },
 ];
 

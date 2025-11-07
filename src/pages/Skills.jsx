@@ -10,7 +10,7 @@ import tailwind from "../assets/tailwind.png";
 import sass from "../assets/sass.jpeg";
 import git from "../assets/git.png";
 import ps from "../assets/photoshop.png";
-import ts from "../assets/Typescript.png";
+import ts from "../assets/TypeScript.png";
 import Ns from "../assets/Node.png";
 import express from "../assets/Express.png";
 import mongo from "../assets/MongoDB.png";

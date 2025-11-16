@@ -110,7 +110,7 @@ const Resume = () => {
             <h3 className="font-semibold text-gray-800">
               Full Stack Developer – CLS Tech Solutions
             </h3>
-            <p className="text-gray-600 text-sm mb-1">Jan 2022 – Present</p>
+            <p className="text-gray-600 text-sm mb-1">Dec 2023 – Present</p>
             <ul className="list-disc ml-5 text-gray-700 text-sm space-y-1">
               <li>
                 Designed and deployed full-stack applications with React and
@@ -130,7 +130,7 @@ const Resume = () => {
             <h3 className="font-semibold text-gray-800">
               Frontend Developer Intern – Applick Innovations
             </h3>
-            <p className="text-gray-600 text-sm mb-1">Jun 2021 – Dec 2021</p>
+            <p className="text-gray-600 text-sm mb-1">May 2023 – Dec 2023</p>
             <ul className="list-disc ml-5 text-gray-700 text-sm space-y-1">
               <li>Developed reusable React components and UI modules.</li>
               <li>Improved user engagement by 20% with optimized UI/UX.</li>

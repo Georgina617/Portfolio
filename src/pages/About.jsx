@@ -72,14 +72,18 @@ const About = () => {
             </div>
           </div>
           <p className="text-gray-300 leading-relaxed">
-            I am a passionate and detail-oriented Frontend Developer with a
-            strong focus on creating clean, responsive, and user-friendly web
-            applications. Skilled in JavaScript, Tailwind CSS, React, and HTML,
-            I specialize in transforming ideas and designs into seamless digital
-            experiences. I thrive in collaborative, team-oriented environments
-            and embrace agile methodologies to deliver high-quality projects.
-            Beyond coding, I am motivated by solving real-world problems and
-            building intuitive solutions that create lasting impact.
+            I am a passionate and detail-oriented Full-Stack Developer with a
+            strong commitment to building clean, scalable, and user-focused web
+            applications. With solid experience in JavaScript, TypeScript,
+            React, Tailwind CSS, PHP, Node.js, Express, MongoDB, and MySQL, I
+            bring ideas to life by delivering seamless end-to-end digital
+            experiences—from intuitive interfaces on the frontend to efficient,
+            robust logic on the backend. I thrive in collaborative, team-driven
+            environments and confidently embrace agile methodologies to deliver
+            high-quality, maintainable solutions. Beyond writing code, I’m
+            motivated by solving real-world problems, optimizing user
+            experiences, and creating meaningful products that make a lasting
+            impact.
           </p>
           <div className="mt-6">
             <Button />

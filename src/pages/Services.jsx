@@ -1,83 +1,91 @@
-import { Code, Palette, Settings, Smartphone, Zap } from "lucide-react";
-import React, { useEffect } from "react";
-import { Link } from "react-scroll";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import { Code, Palette, Settings, Smartphone, Zap } from 'lucide-react';
+import React, { useEffect } from 'react';
+import { Link } from 'react-scroll';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const services = [
   {
-    title: "Web Development",
+    title: 'Web Development',
     description:
-      "Modern technologies like React, Javascript and other libaries used to build customized websites and web applications.Clean and scalable code that performs.",
-    features: ["React", "Javascript", "Clean Code"],
+      'Full-stack web development using modern technologies like React, Node.js, Express, MongoDB, PHP, and Laravel. I build scalable, secure, and high-performing applications — from responsive frontends to robust backend APIs and databases.',
+    features: [
+      'React',
+      'Node.js',
+      'MongoDB',
+      'Express',
+      'PHP',
+      'Laravel',
+      'Clean Code',
+    ],
     icon: <Code size={40} />,
-    color: "text-blue-500",
-    dotColor: "bg-blue-500",
-    hoverBg: "hover:bg-blue-500",
+    color: 'text-blue-500',
+    dotColor: 'bg-blue-500',
+    hoverBg: 'hover:bg-blue-500',
   },
   {
-    title: "Responsive Design",
+    title: 'Responsive Design',
     description:
-      "Mobile-first approach ensuring your website looks perfect on all devices. Seamless user experience across desktop,tablet and mobile",
+      'Mobile-first approach ensuring your website looks perfect on all devices. Seamless user experience across desktop,tablet and mobile',
     features: [
-      "flexible layouts",
-      "Cross Browser",
-      "Mobile-first",
-      "Touch-friendly",
+      'flexible layouts',
+      'Cross Browser',
+      'Mobile-first',
+      'Touch-friendly',
     ],
     icon: <Smartphone size={40} />,
-    color: "text-pink-500",
-    dotColor: "bg-pink-500",
-    hoverBg: "hover:bg-pink-500",
+    color: 'text-pink-500',
+    dotColor: 'bg-pink-500',
+    hoverBg: 'hover:bg-pink-500',
   },
   {
-    title: "UI/UX Design",
+    title: 'UI/UX Design',
     description:
-      "Beautiful, intuitive interfaces that engage users and drive conversions. Modern design principles with focus on usability and accessibility.",
+      'Beautiful, intuitive interfaces that engage users and drive conversions. Modern design principles with focus on usability and accessibility.',
     features: [
-      "User-Centered",
-      "Modern Design",
-      "Accessibility",
-      "Wireframing",
+      'User-Centered',
+      'Modern Design',
+      'Accessibility',
+      'Wireframing',
     ],
     icon: <Palette size={40} />,
-    color: "text-orange-500",
-    dotColor: "bg-orange-500",
-    hoverBg: "hover:bg-orange-500",
+    color: 'text-orange-500',
+    dotColor: 'bg-orange-500',
+    hoverBg: 'hover:bg-orange-500',
   },
   {
-    title: "Performance Optimatization",
+    title: 'Performance Optimatization',
     description:
-      "Lightning-fast loading times and smooth interactions. Optimized images, code splitting, and best practices for superior performance.",
+      'Lightning-fast loading times and smooth interactions. Optimized images, code splitting, and best practices for superior performance.',
     features: [
-      "Fast Loading",
-      "Code Splitting",
-      "Image Optimization",
-      "Caching",
+      'Fast Loading',
+      'Code Splitting',
+      'Image Optimization',
+      'Caching',
     ],
     icon: <Zap size={40} />,
-    color: "text-yellow-500",
-    dotColor: "bg-yellow-500",
-    hoverBg: "hover:bg-yellow-500",
+    color: 'text-yellow-500',
+    dotColor: 'bg-yellow-500',
+    hoverBg: 'hover:bg-yellow-500',
   },
   {
-    title: "SEO Optimatization",
+    title: 'SEO Optimatization',
     description:
-      "Search engine optimized websites with proper meta tags, structured data, and performance metrics to boost your online visibility.",
-    features: ["Meta Tags", "Core Web Vitals", "Structured Data", "Analytics"],
+      'Search engine optimized websites with proper meta tags, structured data, and performance metrics to boost your online visibility.',
+    features: ['Meta Tags', 'Core Web Vitals', 'Structured Data', 'Analytics'],
     icon: <Zap size={40} />,
-    color: "text-green-500",
-    dotColor: "bg-green-500",
-    hoverBg: "hover:bg-green-500",
+    color: 'text-green-500',
+    dotColor: 'bg-green-500',
+    hoverBg: 'hover:bg-green-500',
   },
   {
-    title: "Maintenance & Support",
+    title: 'Maintenance & Support',
     description:
-      "Ongoing support, updates, and maintenance to keep your website running smoothly. Regular backups and security monitoring.",
-    features: ["Regular Updates", "Security", "Bug Fixes", "24/7 support"],
+      'Ongoing support, updates, and maintenance to keep your website running smoothly. Regular backups and security monitoring.',
+    features: ['Regular Updates', 'Security', 'Bug Fixes', '24/7 support'],
     icon: <Settings size={40} />,
-    color: "text-purple-500",
-    dotColor: "bg-purple-500",
-    hoverBg: "hover:bg-purple-500",
+    color: 'text-purple-500',
+    dotColor: 'bg-purple-500',
+    hoverBg: 'hover:bg-purple-500',
   },
 ];
 const Services = () => {

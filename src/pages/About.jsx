@@ -1,9 +1,9 @@
-import React, { useEffect } from "react";
-import profileImg from "../assets/profileImg.jpg";
-import { Award, Code, Laptop } from "lucide-react";
-import Button from "../component/utils/Button";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React, { useEffect } from 'react';
+import profileImg from '../assets/profileImg.jpg';
+import { Award, Code, Laptop } from 'lucide-react';
+import Button from '../component/utils/Button';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const About = () => {
   useEffect(() => {
@@ -49,7 +49,7 @@ const About = () => {
               <div className="transition-transform duration-300 group-hover:scale-110">
                 <Award className="mx-auto mb-2 text-blue-400" size={28} />
                 <h3 className="font-bold">Experience</h3>
-                <p className="text-gray-400 text-sm">1 year</p>
+                <p className="text-gray-400 text-sm">2 years</p>
               </div>
             </div>
             <div className="border border-blue-500 rounded-xl p-6 text-center transition-transform duration-300 transform hover:-translate-y-2 hover:shadow-lg cursor-pointer">

@@ -5,7 +5,7 @@ import BeowinImg from '../assets/Beowin.png';
 import HarmonyImg from '../assets/Harmony.png';
 import MagicStreamImg from '../assets/MagicStream.png';
 import ecommerceImg from '../assets/Ecommerce.png';
-import weatherImg from '../assets/weather App.png';
+import weatherImg from '../assets/weatherApp.png';
 import { ExternalLink } from 'lucide-react';
 import { FiGithub } from 'react-icons/fi';
 import AOS from 'aos';

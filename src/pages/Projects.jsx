@@ -6,6 +6,7 @@ import HarmonyImg from '../assets/Harmony.png';
 import MagicStreamImg from '../assets/MagicStream.png';
 import ecommerceImg from '../assets/Ecommerce.png';
 import weatherImg from '../assets/weatherApp.png';
+import blogImg from '../assets/blog.png';
 import { ExternalLink } from 'lucide-react';
 import { FiGithub } from 'react-icons/fi';
 import AOS from 'aos';
@@ -55,6 +56,15 @@ const projects = [
     tags: ['React', 'Go', 'Javascript'],
     image: MagicStreamImg,
     demoLink: 'https://magic-stream-movies-nine.vercel.app',
+    githubLink: 'https://github.com/Georgina617',
+  },
+  {
+    title: 'Laravel Blog',
+    description:
+      'A fully functional blog built with Laravel, featuring user authentication, CRUD operations for posts, categories and comments, and a responsive design. Users can create, edit, delete, and comment on posts, while admins can manage content and users. The application demonstrates proficiency routing, middleware, and RESTful API principles',
+    tags: ['laravel', 'PHP', 'Javascript'],
+    image: blogImg,
+    demoLink: 'https://github.com/Georgina617/Blog.git',
     githubLink: 'https://github.com/Georgina617',
   },
   {

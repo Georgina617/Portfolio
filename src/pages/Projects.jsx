@@ -7,6 +7,7 @@ import MagicStreamImg from '../assets/MagicStream.png';
 import ecommerceImg from '../assets/Ecommerce.png';
 import weatherImg from '../assets/weatherApp.png';
 import blogImg from '../assets/blog.png';
+import courseManagerImg from '../assets/courseManagentApi.png';
 import { ExternalLink } from 'lucide-react';
 import { FiGithub } from 'react-icons/fi';
 import AOS from 'aos';
@@ -66,6 +67,15 @@ const projects = [
     image: blogImg,
     demoLink: 'https://github.com/Georgina617/Blog.git',
     githubLink: 'https://github.com/Georgina617',
+  },
+  {
+    title: 'Course-Management-backend project',
+    description:
+      'A RESTful course-management backend that supports course CRUD operations, student enrollment, instructor roles, and progress tracking. Designed with modular architecture, authentication, and database optimization in mind.',
+    tags: ['Node.js', 'Express', 'MongoDB'],
+    image: courseManagerImg,
+    demoLink: 'https://github.com/Georgina617/course-management-backend.git',
+    githubLink: 'https://github.com/Georgina617/course-management-backend.git',
   },
   {
     title: 'DNk Ecommerce Website',

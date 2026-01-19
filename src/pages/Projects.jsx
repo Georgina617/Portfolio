@@ -7,7 +7,7 @@ import MagicStreamImg from '../assets/MagicStream.png';
 import ecommerceImg from '../assets/Ecommerce.png';
 import weatherImg from '../assets/weatherApp.png';
 import blogImg from '../assets/blog.png';
-import courseManagerImg from '../assets/courseManagentApi.png';
+import courseManagerImg from '../assets/courseManagementApi.png';
 import { ExternalLink } from 'lucide-react';
 import { FiGithub } from 'react-icons/fi';
 import AOS from 'aos';

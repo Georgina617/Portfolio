@@ -7,6 +7,7 @@ import MagicStreamImg from '../assets/MagicStream.png';
 import ecommerceImg from '../assets/Ecommerce.png';
 import weatherImg from '../assets/weatherApp.png';
 import blogImg from '../assets/blog.png';
+import adminImg from '../assets/pathways.png';
 import courseManagerImg from '../assets/courseManagementApi.png';
 import { ExternalLink } from 'lucide-react';
 import { FiGithub } from 'react-icons/fi';
@@ -75,6 +76,15 @@ const projects = [
     tags: ['Node.js', 'Express', 'MongoDB'],
     image: courseManagerImg,
     demoLink: 'https://github.com/Georgina617/course-management-backend.git',
+    githubLink: 'https://github.com/Georgina617/course-management-backend.git',
+  },
+  {
+    title: 'E-Commerce & Admin Blog Platform',
+    description:
+      'A full-stack e-commerce web application with an integrated admin-only blog management system and secure online payments via Paystack and Flutterwave. The platform features a user-friendly shopping experience, allowing customers to browse products, add items to their cart, and complete purchases securely. The admin panel enables authorized users to create, edit, and delete blog posts, manage product listings, and oversee orders. The application is built with a focus on security, performance, and scalability, ensuring a seamless experience for both customers and administrators.',
+    tags: ['PHP', 'Mysql', 'javascript'],
+    image: adminImg,
+    demoLink: 'https://pathwaysandtravels.kesug.com/',
     githubLink: 'https://github.com/Georgina617/course-management-backend.git',
   },
   {

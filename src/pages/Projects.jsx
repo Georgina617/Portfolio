@@ -8,6 +8,7 @@ import ecommerceImg from '../assets/Ecommerce.png';
 import weatherImg from '../assets/weatherApp.png';
 import blogImg from '../assets/blog.png';
 import adminImg from '../assets/pathways.png';
+import InvoiceImg from '../assets/Invoice.png';
 import courseManagerImg from '../assets/courseManagementApi.png';
 import { ExternalLink } from 'lucide-react';
 import { FiGithub } from 'react-icons/fi';
@@ -23,6 +24,16 @@ const projects = [
     image: voyagerImg,
     demoLink: 'https://travelsandtourvoyage.com/',
     githubLink: 'https://github.com/Georgina617/voyager-website.git',
+  },
+
+  {
+    title: 'Invoice-Management App',
+    description:
+      'A comprehensive invoice management application that allows users to create, manage, and track invoices efficiently. Built with React for the frontend and local storage for the backend, it features user authentication, invoice generation, and real-time data updates.',
+    tags: ['React', 'Tailwind CSS', 'Javascript', 'localStorage'],
+    image: InvoiceImg,
+    demoLink: 'https://invoice-management-app-tgz9.vercel.app/',
+    githubLink: 'https://github.com/Georgina617/Invoice-Management-App.git',
   },
   {
     title: 'Fountain Connect Website',
